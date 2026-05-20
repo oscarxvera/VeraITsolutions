@@ -55,7 +55,8 @@
     /* Service cards */
     .service-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 28px 24px; transition: box-shadow 0.2s, transform 0.2s; }
     .service-card:hover { box-shadow: 0 8px 30px rgba(29,110,245,0.10); transform: translateY(-2px); }
-    .service-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .service-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04); transition: transform 0.22s, box-shadow 0.22s; }
+    .service-card:hover .service-icon { transform: scale(1.10) rotate(-3deg); box-shadow: 0 4px 14px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04); }
 
     /* Pricing cards */
     .pricing-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 32px 28px; display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; position: relative; }
@@ -278,8 +279,8 @@
 
         <!-- Managed IT Retainer -->
         <div class="service-card">
-          <div class="service-icon" style="background:#dbeafe;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#1d6ef5" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="#1d6ef5" stroke-width="1.8" stroke-linecap="round"/><path d="M6 10l2 2 4-4" stroke="#1d6ef5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">
+            <i data-lucide="monitor-check" style="width:26px;height:26px;color:#1d6ef5;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">Managed IT Retainer</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">Your dedicated IT department for a flat monthly rate. We handle day-to-day support, device issues, and keep your technology running — so you never have to think about it.</p>
@@ -292,8 +293,8 @@
 
         <!-- Microsoft 365 -->
         <div class="service-card">
-          <div class="service-icon" style="background:#e0f2fe;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="9" height="9" rx="1.5" fill="#0ea5e9" opacity="0.85"/><rect x="13" y="2" width="9" height="9" rx="1.5" fill="#0369a1" opacity="0.85"/><rect x="2" y="13" width="9" height="9" rx="1.5" fill="#0369a1" opacity="0.85"/><rect x="13" y="13" width="9" height="9" rx="1.5" fill="#0ea5e9" opacity="0.85"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#e0f2fe,#bae6fd);">
+            <i data-lucide="layout-grid" style="width:26px;height:26px;color:#0369a1;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">Microsoft 365 Setup &amp; Management</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">Full Microsoft 365 administration — migrations from Gmail or legacy email, Exchange setup, Teams, SharePoint, and ongoing user management. We handle licensing, onboarding, and offboarding.</p>
@@ -306,8 +307,8 @@
 
         <!-- Identity & Access (Entra ID) -->
         <div class="service-card">
-          <div class="service-icon" style="background:#fce7f3;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#db2777" stroke-width="1.8"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="#db2777" stroke-width="1.8" stroke-linecap="round"/><path d="M17 11l1.5 1.5L22 9" stroke="#db2777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">
+            <i data-lucide="user-check" style="width:26px;height:26px;color:#db2777;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">Identity &amp; Access Management</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">Azure AD / Entra ID setup and management — single sign-on, conditional access policies, MFA enforcement, and user lifecycle management. Keeps your business secure without slowing your team down.</p>
@@ -320,8 +321,8 @@
 
         <!-- MDM & Device Management -->
         <div class="service-card">
-          <div class="service-icon" style="background:#ede9fe;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="9" height="13" rx="1.5" stroke="#7c3aed" stroke-width="1.8"/><rect x="15" y="4" width="7" height="10" rx="1.5" stroke="#7c3aed" stroke-width="1.5"/><rect x="2" y="6" width="5" height="7" rx="1" stroke="#7c3aed" stroke-width="1.5"/><path d="M9 19h6" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">
+            <i data-lucide="tablet-smartphone" style="width:26px;height:26px;color:#7c3aed;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">MDM &amp; Device Management</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">We enroll, configure, and manage every iPhone, iPad, and laptop in your fleet using Jamf and Microsoft Intune — enforcing policies, pushing updates, and keeping your devices secure remotely.</p>
@@ -334,8 +335,8 @@
 
         <!-- Device Procurement & Deployment -->
         <div class="service-card">
-          <div class="service-icon" style="background:#dcfce7;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1.5 9a2 2 0 01-2 1.5H8.5a2 2 0 01-2-1.5L5 8z" stroke="#16a34a" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 8h18M9 8V6a3 3 0 016 0v2" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);">
+            <i data-lucide="package" style="width:26px;height:26px;color:#16a34a;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">Device Procurement &amp; Deployment</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">We source, configure, and deploy the right devices for your team — fully set up and enrolled in MDM before they arrive. New hire? New device ready same day.</p>
@@ -348,8 +349,8 @@
 
         <!-- On-Site IT Support -->
         <div class="service-card">
-          <div class="service-icon" style="background:#fef9c3;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3-3a6 6 0 01-7.4 7.4l-5.5 5.5a2.1 2.1 0 01-3-3l5.5-5.5a6 6 0 017.4-7.4l-3 3z" stroke="#ca8a04" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#fef9c3,#fef08a);">
+            <i data-lucide="wrench" style="width:26px;height:26px;color:#ca8a04;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">On-Site IT Support</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">Some problems need a human in the room. We show up at your location — across multiple sites if needed — to troubleshoot, repair, train staff, and handle anything that can't be done remotely.</p>
@@ -362,8 +363,8 @@
 
         <!-- IT Projects (hourly) -->
         <div class="service-card">
-          <div class="service-icon" style="background:#fff7ed;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="#ea580c" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="service-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa);">
+            <i data-lucide="clipboard-check" style="width:26px;height:26px;color:#ea580c;stroke-width:1.6;"></i>
           </div>
           <h3 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">One-Time IT Projects</h3>
           <p style="font-size:13px; color:#64748b; line-height:1.65; margin-bottom:18px;">Need a one-time migration, new office setup, or a security audit? We take on scoped projects billed at our hourly rate — with a clear quote before we start, no hidden costs.</p>
@@ -784,7 +785,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
+    lucide.createIcons();
+
     /* Mobile nav */
     function toggleNav() {
       document.getElementById('mobileNav').classList.toggle('open');
